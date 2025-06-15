@@ -66,7 +66,7 @@ function displayBookmarks(bookmarks) {
           <td><a rel="noopener" href=${
             bookmarkList[i].url
           } class="btn btn-visit" target="_blank"><i
-                class="fa-solid fa-eye pe-2"></i>
+                class="fa-solid fa-eye"></i>
               Visit</a></td>
           <td><button type="button" class="btn btn-delete" onclick="deleteBookmark(${i})"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
         </tr>

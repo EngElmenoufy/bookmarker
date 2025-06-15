@@ -41,10 +41,16 @@ body {
 .add-bookmark h2 {
   width: fit-content;
   font-family: "Righteous", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .add-bookmark h2 {
+    font-size: 1.6rem;
+  }
 }
 
 .btn-submit {
