@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="./images/bookmark.png">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+    rel="stylesheet">
+
+  <!-- css files -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Bookmark</title>
+</head>
+
+<body>
+  <main class="main container py-5 d-flex flex-column align-items-center justify-content-center">
+    <h1 class="text-center mb-3">Bookmarker</h1>
+
+    <div class="add-bookmark w-100 mt-5 py-4 d-flex flex-column align-items-center justify-content-center gap-4">
+
+      <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+
+      <!-- <form class="form w-100 px-3 d-flex flex-column justify-content-center align-items-center"> -->
+
+      <div class="w-100">
+        <label for="site-name" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark pe-2"></i> Site
+          Name</label>
+        <input id="site-name" type="text" class="form-control" name="site-name" placeholder="Bookmark Name"
+          oninput="isValidationName()">
+      </div>
+
+      <div class="w-100">
+        <label for="site-url" class="form-label fw-bold"><i class="fa-solid fa-link pe-2"></i> Site
+          URL</label>
+        <input id="site-url" type="text" class="form-control" name="site-url" placeholder="Website URL"
+          oninput="isValidationUrl()">
+      </div>
+
+      <button type="button" class="btn btn-submit px-5" onclick="addBookmark()">Submit</button>
+
+
+    </div>
+
+    <table class="table text-center my-4">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </tr>
+      <tbody id="bookmarks-table" class="align-middle">
+      </tbody>
+      </thead>
+    </table>
+  </main>
+
+  <!-- js files -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
